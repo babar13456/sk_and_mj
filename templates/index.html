@@ -1,0 +1,60 @@
+{% extends 'basic/links.html' %}
+
+{% load static %}
+
+{% block content %}
+
+
+  {% include 'website_pages/header.html' %}
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="container text-center text-md-left" data-aos="fade-up">
+      <h1>Welcome to <span>MJ & SK Software House</span></h1>
+      <h2>MJ & SK is a software company that provides services to develop different software programs for businesses
+          and professionals</h2>
+      <a href="#about" class="btn-get-started scrollto">Get Started</a>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ============= WHAT WE DO PAGE ================ -->
+
+   {% include 'website_pages/what_we_do.html' %}
+
+   <!-- ============= ABOUT US PAGE ================ -->
+
+   {% include 'website_pages/about.html' %}
+
+
+   <!-- ============= PORTFOLIO PAGE ================ -->
+
+   {% include 'website_pages/portfolio.html' %}
+
+
+   <!-- ============= OUR TEAM PAGE ================ -->
+
+   {% include 'website_pages/our_team.html' %}
+
+
+   <!-- ============= CONTACT US PAGE ================ -->
+
+   {% include 'website_pages/contact_us.html' %}
+
+    
+
+  </main><!-- End #main -->
+
+
+  <!-- ============= FOOTER PAGE ================ -->
+
+   {% include 'website_pages/footer.html' %}
+
+  
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+ {% include 'basic/java_links.html' %}
+
+{% endblock %}
